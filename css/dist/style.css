@@ -1,0 +1,295 @@
+@import "/css/dist/nulled.css";
+.h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 1px;
+}
+
+.button-text, .navbar-grid a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.body-big, .footer-grid__item, .container-grid .button, .header-grid .tagline {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+
+.body-1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.body-2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #4c4c4c;
+}
+
+.header {
+  max-width: 912px;
+  padding: 24px 0;
+  margin: auto;
+}
+
+.header-grid {
+  display: grid;
+  text-align: center;
+}
+@media (min-width: 288px) {
+  .header-grid .company-name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 600px) {
+  .header-grid .company-name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 599px) {
+  .navbar-grid {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .navbar-grid {
+    margin: 0 auto 48px auto;
+    display: grid;
+    width: min-content;
+    grid-template-columns: 53px 108px 90px;
+    grid-auto-rows: auto;
+    grid-gap: 48px;
+    align-items: center;
+    text-align: center;
+  }
+}
+.container {
+  padding: 24px 16px;
+}
+.container-grid {
+  margin: auto;
+  display: grid;
+  grid-gap: 24px;
+}
+@media (min-width: 288px) {
+  .container-grid {
+    max-width: 288px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 312px 336px 168px 288px 288px 288px 288px 288px 288px 288px;
+    grid-template-areas: "about-us-photo" "about-us-block" "portfolio" "coats" "shirts" "dresses" "skirts" "jersey" "classic" "denim" "how-we-work";
+  }
+}
+@media (min-width: 600px) {
+  .container-grid {
+    max-width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px 336px 264px 120px 264px 144px 240px 192px 96px;
+    grid-template-areas: "about-us-photo   about-us-photo" "about-us-block   portfolio" "coats            shirts" "coats            skirts" "dresses          skirts" "dresses          jersey" "classic          jersey" "classic          denim" "how-we-work      denim";
+  }
+}
+@media (min-width: 912px) {
+  .container-grid {
+    max-width: 912px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 336px 240px 144px 96px 120px 144px 120px 72px 144px;
+    grid-template-areas: "about-us-block   about-us-photo  about-us-photo" "portfolio        about-us-photo  about-us-photo" "portfolio        shirts          skirts" "coats            shirts          skirts" "coats            dresses         skirts" "coats            dresses         jersey" "classic          dresses         jersey" "classic          denim           jersey" "classic          denim           how-we-work";
+  }
+}
+.container-grid .button {
+  text-transform: uppercase;
+}
+.container-grid-item {
+  background-color: #4c4c4c;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.35);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.container-grid-item:hover {
+  box-shadow: inset 2000px 0 0 0 black;
+  color: white;
+}
+.container-grid-item__about-us-block {
+  grid-area: about-us-block;
+}
+.container-grid-item__about-us-block .h4 {
+  margin-bottom: 24px;
+}
+.container-grid-item__about-us-photo {
+  background-color: #4c4c4c;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: about-us-photo;
+  background-image: url("../../img/olya.webp");
+}
+.container-grid-item__how-we-work {
+  grid-area: how-we-work;
+}
+.container-grid-item__portfolio {
+  grid-area: portfolio;
+  background-color: #000000;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .skirts {
+  grid-area: skirts;
+  background-image: url("../../img/skirt.webp");
+}
+.container .dresses {
+  grid-area: dresses;
+  background-image: url("../../img/dress.webp");
+}
+.container .coats {
+  grid-area: coats;
+  background-image: url("../../img/coats.webp");
+}
+.container .classic {
+  grid-area: classic;
+  background-image: url("../../img/classic.webp");
+}
+.container .shirts {
+  grid-area: shirts;
+  background-image: url("../../img/shirt.webp");
+}
+.container .denim {
+  grid-area: denim;
+  background-image: url("../../img/denim.webp");
+}
+.container .jersey {
+  grid-area: jersey;
+  background-image: url("../../img/jersey.webp");
+}
+
+.footer {
+  padding: 24px 16px;
+  background-color: white;
+}
+.footer-grid {
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  margin: auto;
+}
+.footer-grid__item {
+  display: flex;
+  color: black;
+}
+.footer-grid__item .footer-text {
+  margin: auto;
+  padding: 0 0 24px 0;
+}
+@media (min-width: 288px) and (max-width: 599px) {
+  .footer-grid__item .footer-text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: auto;
+  }
+}
+.footer-grid__item .social-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.footer-grid__item .social-container .social-whatsapp {
+  margin-right: 48px;
+}
+.footer-grid__item .social-container .social-instagram {
+  margin-right: 48px;
+}
+.footer-grid__logo {
+  grid-area: 1/1/2/2;
+  margin: 24px auto;
+}
+.footer-grid__logo img {
+  height: 72px;
+  object-fit: cover;
+}
+.footer-grid__phone {
+  grid-area: 2/1/3/2;
+}
+.footer-grid__mail {
+  grid-area: 3/1/4/2;
+}
+.footer-grid__adress {
+  grid-area: 4/1/5/2;
+}
+.footer-grid__social {
+  grid-area: 5/1/6/2;
+}
